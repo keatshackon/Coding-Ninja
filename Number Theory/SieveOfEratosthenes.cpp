@@ -36,7 +36,6 @@ int main()
 	}
 	int cnt = 0;
 	for(auto q:v){
-		cout<<q<<" ";
 		if(q == 1)
 			cnt++;
 	}
