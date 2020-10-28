@@ -6,8 +6,8 @@ int main()
 {
 	ll t,n;
 	cin>>t;
-	std::vector<int> v;
-	for(int i=0;i<t;i++){
+	std::vector<ll> v;
+	for(ll i=0;i<t;i++){
 		cin>>n;
 		v.push_back(n);
 	}
@@ -15,7 +15,7 @@ int main()
 
 	ll min = v[1] - v[0];
 
-	for(int i=2; i<t; i++){
+	for(ll i=2; i<t; i++){
 		
 		if((v[i] - v[i-1]) < min ){
 			

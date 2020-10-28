@@ -4,7 +4,7 @@ typedef long long ll;
 
 int main()
 {
-	ll t,n;
+	int t,n;
 	cin>>t;
 	std::vector<int> v;
 	for(int i=0;i<t;i++){
@@ -14,7 +14,7 @@ int main()
 	sort(v.begin(), v.end(),greater<int>());
 
 	int k=0,i=0;
-	int res = 0; 
+	ll res = 0; 
 	while(i<t){
 		res += v[i] * pow(2,k);
 		k++;
