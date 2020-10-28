@@ -10,15 +10,17 @@ bool comp(pair<int,int>a,  pair<int,int> b)
 
 int main()
 {
-	ll t,a,b;
+	int t;
+	ll a,b;
 	cin>>t;
-	std::vector<pair<int,int>> v;
+	std::vector<pair<ll,ll>> v;
 	for(int i=0;i<t;i++){
 		cin>>a>>b;
 		v.push_back(make_pair(a,b));
 	}
+	sort(v.begin(), v.end(),comp);
 	int res = 1;
-	int q = v[0].second; 
+	ll q = v[0].second; 
 	for(int i=1;i<t;i++){
 		if(q <= v[i].first){
 			res++;
@@ -26,7 +28,4 @@ int main()
 		}
 	}
 	cout<<res<<"\n";
-	
-
-
 }
