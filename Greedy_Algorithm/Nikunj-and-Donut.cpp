@@ -11,16 +11,14 @@ int main()
 		cin>>n;
 		v.push_back(n);
 	}
-	sort(v.begin(), v.end());
+	sort(v.begin(), v.end(),greater<int>());
 
-	ll min = v[1] - v[0];
-
-	for(int i=2; i<t; i++){
-		
-		if((v[i] - v[i-1]) < min ){
-			
-			min = v[i] - v[i-1];
-		}
+	int k=0,i=0;
+	int res = 0; 
+	while(i<t){
+		res += v[i] * pow(2,k);
+		k++;
+		i++;
 	}
-	cout<<min<<"\n";
+	cout<<res<<"\n";
 }
