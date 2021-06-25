@@ -22,9 +22,9 @@ int main() {
 	ll t, n;
 
 	int arr1[6] = {23, 3, 5, 2, 10, -1};
-	int arr2[5] = {2, 3, 5, 20, 100};
+	int arr2[5] = {2, 1};
 
-	cout << is_sorted(arr2, 4);
+	cout << is_sorted(arr2, 1);
 
 	return 0;
 }

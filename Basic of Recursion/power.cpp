@@ -5,8 +5,8 @@ using namespace std;
 
 int x_pow(int n, int x) {
 
-	if (x == 1) {
-		return n;
+	if (x == 0) {
+		return 1;
 	}
 
 	return n * x_pow(n, --x);
